@@ -1,17 +1,25 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="bg-red-500">
+      <h1>
         ABOUT
       </h1>
-      <div class="links">
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'About',
+  head: {
+    title: 'About page',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'About page description',
+      },
+    ],
+  },
+};
 </script>
